@@ -3,18 +3,17 @@ package domain.model;
 import java.util.Date;
 
 public class Vaga {
-	String cargo;
-	String empresa;
-	String nivelVaga;
-	Integer quantidadeVaga;
-	String detalheVaga;
-	String localidade;
-	Date dataPublicacao;
-	String salario;
+	private String cargo;
+	private String empresa;
+	private String nivelVaga;
+	private Integer quantidadeVaga;
+	private String detalheVaga;
+	private String localidade;
+	private Date dataPublicacao;
+	private String salario;
 	
 	public Vaga(String cargo, String empresa, String nivelVaga, Integer quantidadeVaga, String detalheVaga,
 			String localidade, Date dataPublicacao, String salario) {
-		super();
 		this.cargo = cargo;
 		this.empresa = empresa;
 		this.nivelVaga = nivelVaga;

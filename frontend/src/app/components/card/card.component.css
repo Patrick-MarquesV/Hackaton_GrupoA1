@@ -1,0 +1,58 @@
+@import url("../../../styles.css");
+
+.card {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 5%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--color-light-black);
+}
+
+h3,
+span {
+    font-weight: var(--font-weight-bold);
+}
+
+p {
+    color: var(--color-light-black);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.row h4 {
+    padding: 5px 15px;
+}
+
+.quantidade {
+    text-align: center;
+    margin-right: 15px;
+    border: 1px var(--color-blue) solid;
+    color: var(--color-blue);
+    border-radius: 15px;
+}
+
+.data {
+    text-align: center;
+    margin-left: 15px;
+    border: 1px var(--color-light-black) solid;
+    color: var(--color-light-black);
+    border-radius: 15px;
+}
+
+.button {
+    width: 100%;
+}
