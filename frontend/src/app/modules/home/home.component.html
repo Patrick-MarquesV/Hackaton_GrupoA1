@@ -1,0 +1,36 @@
+<section class="hero container">
+    <div class="description">
+        <h1 class="main-headling">Encontre seu <span>Job</span></h1>
+        <p>São mais de 12 mil vagas de emprego com as melhores oportunidades de trabalho para todos os cargos e áreas.
+            Cadastre-se gratuitamente!</p>
+
+        <div class="form-container">
+            <h4>Encontre sua vaga de emprego:</h4>
+            <div class="tags">
+                <small>Web Designer</small>
+                <small>UI/UX Designer</small>
+                <small>Frontend</small>
+            </div>
+            <form class="search-vagas">
+                <label for="input-search">
+                    <img [src]="searchIcon" alt="Digite sua busca" />
+                </label>
+                <input type="text" id="input-search" placeholder="Pesquise aqui sua vaga" />
+                <button class="button">Pesquisar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="image">
+        <div class="box thunder-box">
+            <img class="icon" [src]="thunder" alt="Rapidez e agilidade" />
+            <p>É preciso apenas alguns segundos</p>
+        </div>
+        <img class="model-hero" [src]="modelHero" alt="Encontre seu Job" />
+        <div class="box job-box">
+            <img class="icon" [src]="job" alt="Vagas disponíveis" />
+            <small>12K</small>
+            <p>Vagas de Emprego</p>
+        </div>
+    </div>
+</section>
