@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: green;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+h3 {
+    font-weight: bold;
+    font-size: medium;
+}
+
+span {
+    font-weight: bold;
+    font-size: medium;
+}
+
+p {
+    color: #7c7c7e;
+}
+
+[class*="col-"] {
+    float: left;
+    margin-left: 0px;
+    padding: 15px;
+}
+
+.quantidade {
+    text-align: center;
+    margin-right: 15px;
+    border: 1px #6c7ce4 solid;
+    color: #6c7ce4;
+    border-color: #6c7ce4;
+    border-radius: 15px;
+}
+
+.data {
+    text-align: center;
+    margin-left: 15px;
+    border: 1px #bcbcbb solid;
+    color: #bcbcbb;
+    border-color: #bcbcbb;
+    border-radius: 15px;
+}
+
+.btn {
+    color: white;
+    background-color: #f49c4c;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #e08938;
+}
