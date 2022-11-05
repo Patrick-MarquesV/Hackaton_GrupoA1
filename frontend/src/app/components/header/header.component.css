@@ -1,0 +1,29 @@
+@import url('../../../styles.css');
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header .header--logo {
+    max-width: 100px;
+}
+
+.header .header--navbar {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
+    font-weight: var(--font-weight-semi-bold);
+
+    color: var(--color-black);
+}
+
+.header .header--navbar a:first-of-type {
+    color: var(--color-orange);
+}
