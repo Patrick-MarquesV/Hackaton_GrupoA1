@@ -21,4 +21,20 @@
     - Date dataPublicacao (now)
     - String salario (text ou à combinar)
 
+### 2. Páginas (Front)
+    - Página Produto: `domain.com`
+    - Página Produto: `domain.com/vagas`
+
+### Tecnologias e Libs
+    - Angular
+    - Java
+    - JSoup: `https://jsoup.org/`
+
+### Design
+    - Página Inicial
+![Página Inicial](assets/images/pagina-inicial.png)
+
+    - Página Vagas
+![Página Vagas](assets/images/pagina-vagas.png)
+
 </details>
