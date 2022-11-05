@@ -4,13 +4,11 @@ import { ApiRoutingModule } from './api-routing.module';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    CardComponent
   ],
   imports: [
     BrowserModule,

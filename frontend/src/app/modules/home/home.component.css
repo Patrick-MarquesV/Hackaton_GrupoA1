@@ -117,3 +117,34 @@
     top: 35px;
     right: 45px;
 }
+
+.image .model-hero {
+    max-width: 375px;
+}
+
+@media screen and (max-width: 870px) {
+    .hero {
+        grid-template-columns: 100%;
+    }
+
+    .image {
+        text-align: center;
+    }
+
+    .thunder-box {
+        transform: translateX(-50%);
+        left: 25%;
+        bottom: 0px;
+    }
+
+    .job-box {
+        right: 25%;
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .job-box {
+        right: 0;
+    }
+}
