@@ -54,30 +54,30 @@
   </tr>
   <tr>
     <td align="center">
-      <a href="https://github.com/bhigoreduardo">
-        <img src="https://avatars.githubusercontent.com/u/96431991?v=4" width="100px;" alt="Foto do Higor Eduardo no GitHub"/><br>
+      <a href="https://github.com/NickyWasHere">
+        <img src="https://avatars.githubusercontent.com/u/108633713?v=4" width="100px;" alt="Foto do Nicolas no GitHub"/><br>
         <sub>
-          <b>Higor Eduardo</b>
+          <b>Nicolas</b>
         </sub>
       </a>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <a href="https://github.com/bhigoreduardo">
-        <img src="https://avatars.githubusercontent.com/u/96431991?v=4" width="100px;" alt="Foto do Higor Eduardo no GitHub"/><br>
+      <a href="https://github.com/Patrick-MarquesV">
+        <img src="https://avatars.githubusercontent.com/u/80074786?v=4" width="100px;" alt="Foto do Patrick Marques no GitHub"/><br>
         <sub>
-          <b>Higor Eduardo</b>
+          <b>Patrick Marques</b>
         </sub>
       </a>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <a href="https://github.com/bhigoreduardo">
-        <img src="https://avatars.githubusercontent.com/u/96431991?v=4" width="100px;" alt="Foto do Higor Eduardo no GitHub"/><br>
+      <a href="https://github.com/theJoseAlan">
+        <img src="https://avatars.githubusercontent.com/u/117518719?v=4" width="100px;" alt="Foto do José no GitHub"/><br>
         <sub>
-          <b>Higor Eduardo</b>
+          <b>José</b>
         </sub>
       </a>
     </td>
