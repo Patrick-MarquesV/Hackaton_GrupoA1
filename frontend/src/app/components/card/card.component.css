@@ -1,62 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
-body {
-    background-color: green;
-}
+@import url("../../../styles.css");
 
 .card {
-    background-color: white;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
+    background-color: var(--color-white);
+    padding: 20px;
     border-radius: 5%;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-h3 {
-    font-weight: bold;
-    font-size: medium;
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--color-light-black);
 }
 
+h3,
 span {
-    font-weight: bold;
-    font-size: medium;
+    font-weight: var(--font-weight-bold);
 }
 
 p {
-    color: #7c7c7e;
+    color: var(--color-light-black);
 }
 
-[class*="col-"] {
-    float: left;
-    margin-left: 0px;
-    padding: 15px;
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.row h4 {
+    padding: 5px 15px;
 }
 
 .quantidade {
     text-align: center;
     margin-right: 15px;
-    border: 1px #6c7ce4 solid;
-    color: #6c7ce4;
-    border-color: #6c7ce4;
+    border: 1px var(--color-blue) solid;
+    color: var(--color-blue);
     border-radius: 15px;
 }
 
 .data {
     text-align: center;
     margin-left: 15px;
-    border: 1px #bcbcbb solid;
-    color: #bcbcbb;
-    border-color: #bcbcbb;
+    border: 1px var(--color-light-black) solid;
+    color: var(--color-light-black);
     border-radius: 15px;
 }
 
-.btn {
-    color: white;
-    background-color: #f49c4c;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btn:hover {
-    color: white;
-    background-color: #e08938;
+.button {
+    width: 100%;
 }
