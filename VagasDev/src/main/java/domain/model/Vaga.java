@@ -1,20 +1,20 @@
 package domain.model;
 
-import java.util.Date;
-
 public class Vaga {
 	private String cargo;
+	private String linkVaga;
 	private String empresa;
 	private String nivelVaga;
-	private Integer quantidadeVaga;
+	private String quantidadeVaga;
 	private String detalheVaga;
 	private String localidade;
-	private Date dataPublicacao;
+	private String dataPublicacao;
 	private String salario;
 	
-	public Vaga(String cargo, String empresa, String nivelVaga, Integer quantidadeVaga, String detalheVaga,
-			String localidade, Date dataPublicacao, String salario) {
+	public Vaga(String cargo, String linkVaga, String empresa, String nivelVaga, String quantidadeVaga, String detalheVaga,
+			String localidade, String dataPublicacao, String salario) {
 		this.cargo = cargo;
+		this.linkVaga = linkVaga;
 		this.empresa = empresa;
 		this.nivelVaga = nivelVaga;
 		this.quantidadeVaga = quantidadeVaga;
@@ -35,6 +35,10 @@ public class Vaga {
 	public String getCargo() {
 		return cargo;
 	}
+	
+	public String getLinkVaga() {
+		return linkVaga;
+	}
 
 	public String getEmpresa() {
 		return empresa;
@@ -44,7 +48,7 @@ public class Vaga {
 		return nivelVaga;
 	}
 
-	public Integer getQuantidadeVaga() {
+	public String getQuantidadeVaga() {
 		return quantidadeVaga;
 	}
 
@@ -56,7 +60,7 @@ public class Vaga {
 		return localidade;
 	}
 
-	public Date getDataPublicacao() {
+	public String getDataPublicacao() {
 		return dataPublicacao;
 	}
 

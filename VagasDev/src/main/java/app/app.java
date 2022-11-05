@@ -2,15 +2,19 @@ package app;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
-public class app {
+import domain.model.Vaga;
 
-    public static void main(String[] args) {
+public class app {
+	public static List<Vaga> vagas = new ArrayList<>();
+
+    public static void main(String[] args) {   	
         String primaryUrl = "https://www.vagas.com.br/vagas-de-";
 
         String vagaDesejada = "desenvolvedor";
@@ -49,15 +53,9 @@ public class app {
             String localidade = link.getElementsByClass("vaga-local").text();
             String dataPublicacao = link.getElementsByClass("data-publicacao").text();
 
-
-            System.out.println(cargo);
-            System.out.println(linkVaga);
-            System.out.println(empresa);
-            System.out.println(nivelVaga);
-            System.out.println(detalheVaga);
-            System.out.println(localidade);
-            System.out.println(dataPublicacao);
-
+            Vaga vaga = new Vaga(cargo, linkVaga, empresa, nivelVaga, null, detalheVaga, localidade, dataPublicacao, null);
+            vagas.add(vaga);
+            
             contador++;
 
         }
