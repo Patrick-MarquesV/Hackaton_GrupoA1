@@ -26,7 +26,7 @@ public class Vaga {
 	}
 	
 	public String definirSalario(String salario) {
-		if (salario==null) {
+		if (salario.length()==0) {
 			return "A combinar";
 		} else {
 			return salario;
