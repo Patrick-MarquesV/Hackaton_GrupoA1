@@ -13,13 +13,13 @@ import domain.model.Vaga;
 
 public class app {
 	public static List<Vaga> vagas = new ArrayList<>();
+    final static String PRIMARY_URL = "https://www.vagas.com.br/vagas-de-";
 
-    public static void main(String[] args) {   	
-        String primaryUrl = "https://www.vagas.com.br/vagas-de-";
+    public static void main(String[] args) {
 
         String vagaDesejada = "desenvolvedor";
 
-        String url = String.format("%s%s", primaryUrl, vagaDesejada);
+        String url = String.format("%s%s", PRIMARY_URL, vagaDesejada);
 
         crawl(1,url, new ArrayList<String>());
     }
@@ -29,20 +29,19 @@ public class app {
             Document doc = request(url, visited);
             String oddString = "vaga odd ";
             String evenString = "vaga even ";
-            int contador = 0;
 
-            coletaDadosVaga(doc, oddString, contador);
-            coletaDadosVaga(doc, evenString, contador);
+            coletaDadosVaga(doc, oddString);
+            coletaDadosVaga(doc, evenString);
 
-//                    System.out.println(next_link);
-//
-//                    if(visited.contains(next_link)== false){
-//                        crawl(level++, url, visited);
-//                    }
+            for (Vaga vaga :
+                    vagas) {
+                System.out.println(vaga.toString());
+            }
+
         }
     }
 
-    private static void coletaDadosVaga (Document doc, String tipoVaga, int contador) {
+    private static void coletaDadosVaga (Document doc, String tipoVaga) {
 
         for (Element link : doc.getElementsByClass(tipoVaga)) {
             String cargo = link.getElementsByClass("link-detalhes-vaga").text();
@@ -53,10 +52,7 @@ public class app {
             String localidade = link.getElementsByClass("vaga-local").text();
             String dataPublicacao = link.getElementsByClass("data-publicacao").text();
 
-            Vaga vaga = new Vaga(cargo, linkVaga, empresa, nivelVaga, null, detalheVaga, localidade, dataPublicacao, null);
-            vagas.add(vaga);
-            
-            contador++;
+            vagas.add(new Vaga(cargo, linkVaga, empresa, nivelVaga, detalheVaga, localidade, dataPublicacao));
 
         }
     }
@@ -67,8 +63,6 @@ public class app {
             Document doc = con.get();
 
             if(con.response().statusCode() == 200){
-//                System.out.println("Link: " + url );
-//                System.out.println(doc.title());
                 v.add(url);
 
                 return doc;
